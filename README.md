@@ -48,8 +48,9 @@ Control Mobius Devices
   6. Edit secrets.h to insert your WiFi and MQTT values.
   7. Ensure the board specs match the Arduino IDE settings in Tools > CPU Frequency : Flash Frequency : Upload Speed.
   8. Install esp32 by Espressif System board library version 2.0.17. Later versions won't work.
-  9. Compile and upload using the -> button in the Arduino IDE.
-  10. Monitor serial output in the Arduino IDE.
+  9. Select the appropriate esp32 board and serial port in the Arduino IDE.
+  10. Compile and upload using the -> button in the Arduino IDE.
+  11. Monitor serial output in the Arduino IDE.
 
   SetScene:
   1. Plug in the second esp32
@@ -58,7 +59,7 @@ Control Mobius Devices
      
 ### USING:
   1. Ensure your esp32 is powered and near your Mobius devices.
-  2. Wait for around 10 min for all your Mobius devices to be discovered in HA.
+  2. Wait for around 10 minutes for all your Mobius devices to be discovered in HA.
   3. Rename your devices as required in HA Settings > Devices & services > MQTT > x devices > Edit Settings pencil icon top right > Update Name and Area. Rename all entities.
   4. Use the Mobius app to create scenes that you want to control from HA. Note when creating scenes to select the devices that apply to the scene. You can create scenes that apply to only one device. As an example, you could create a scene for one Versa dosing head to deliver 5ml of Calcium over 5min. 
   5. Execute the scenes from the Mobius app that you want to control from HA. The scenes will be discovered and added to the devices Current Scene sensor and Set Scene Input Select.
