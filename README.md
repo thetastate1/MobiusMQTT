@@ -36,10 +36,11 @@ PREREQUISITES:
   1. MQTT server (tested working with Mosquitto v2.0.18)
   2. Home Assistant with MQTT integration and auto discovery enabled
   3. Arduino IDE
-  4. esp32 (tested working with: ...)
+  4. 2 x esp32 (tested working with: ...). One esp32 for GetScenes and one for SetScene.
   
 INSTALL:
-  1. Download this archive and open MobiusMQTT.ino in Arduino IDE.
+  GetScenes:
+  1. Download this archive and open MobiusMQTTGetScenes.ino in Arduino IDE.
   2. Install EspMQTTClient by Patrick Lapointe in Arduino IDE.
   3. Install ArduinoJson by Beniot Blanchon in Arduino IDE.
   4. Install AntiDelay by Martin Vichnal in Arduino IDE.
@@ -49,7 +50,11 @@ INSTALL:
   8. Install esp32 by Espressif System board library version 2.0.17. Later version won't work.
   9. Compile and upload using the -> button in the Arduino IDE.
   10. Monitor serial output in the Arduino IDE.
-  
+
+  SetScene:
+  1. Plug in a different esp32
+  2. Complie and upload
+     
 USING:
   1. Ensure your esp32 is powered and near your Mobius devices.
   2. Wait for around 10 min for all your Mobius devices to be discovered in HA.
