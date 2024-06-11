@@ -6,39 +6,39 @@ Based on [esp32-MobiusBLE by treesta1ker <link>](https://github.com/treesta1ker/
 Discover and control any device available in the Mobius app from Home Assistant.
 
 Tested Echotech devices include:
-  Vortech
-  Versa
-  Radion
-  AI Prime
-  Nero
+  * Vortech
+  * Versa
+  * Radion
+  * AI Prime
+  * Nero
 
 Typical use cases include:
-  Trigger feeding scenes
-  Auto water change with Versas
-  Supplment control using Versas from manual or automated testing (e.g. Reefbot)
-  Lighting scenes
+  * Trigger feeding scenes
+  * Auto water change with Versas
+  * Supplment control using Versas from manual or automated testing (e.g. Reefbot)
+  * Lighting scenes
 
 Currently requires two esp32 devices. One to discover and one to control. Intending to consolidate functionality on one esp32.
 
 Discover Mobius Devices
-  Establishes a wifi and MQTT connection. 
-  Scans for Mobius devices and updates MQTT with a json message for Home Assistant auto discovery.
-  Creates devices in HA with entities for HA Current Scene sensor and HA Set Scene Control.
-  The current scene for each device is found and an update sent to MQTT. 
-  Stores learned scenes in MQTT and retrieves them. Note the learned scenes will be reset on reboot of MQTT server
+  * Establishes a wifi and MQTT connection. 
+  * Scans for Mobius devices and updates MQTT with a json message for Home Assistant auto discovery.
+  * Creates devices in HA with entities for HA Current Scene sensor and HA Set Scene Control.
+  * The current scene for each device is found and an update sent to MQTT. 
+  * Stores learned scenes in MQTT and retrieves them. Note the learned scenes will be reset on reboot of MQTT server
 
 Control Mobius Devices
-  Sets Mobius device scene using the device serial number and the Mobius scene
-  Mobius scenes are: int 0 though 65535
-  Default scenes are: "No Scene: 0", "Feed Mode: 1", "Battery Backup: 2", "All Off: 3", "Colour Cycle: 4", "Disco :5", "Thunderstorm: 6", "Cloud Cover: 7", "All On: 8", "All 50%: 9"
+  * Sets Mobius device scene using the device serial number and the Mobius scene
+  * Mobius scenes are: int 0 though 65535
+  * Default scenes are: "No Scene: 0", "Feed Mode: 1", "Battery Backup: 2", "All Off: 3", "Colour Cycle: 4", "Disco :5", "Thunderstorm: 6", "Cloud Cover: 7", "All On: 8", "All 50%: 9"
 
-PREREQUISITES:
+# PREREQUISITES:
   1. MQTT server (tested working with Mosquitto v2.0.18)
   2. Home Assistant with MQTT integration and auto discovery enabled
   3. Arduino IDE
   4. 2 x esp32 (tested working with: ...). One esp32 for GetScenes and one for SetScene.
   
-INSTALL:
+# INSTALL:
   GetScenes:
   1. Download this archive and open MobiusMQTTGetScenes.ino in Arduino IDE.
   2. Install EspMQTTClient by Patrick Lapointe in Arduino IDE.
@@ -55,7 +55,7 @@ INSTALL:
   1. Plug in a different esp32
   2. Complie and upload
      
-USING:
+# USING:
   1. Ensure your esp32 is powered and near your Mobius devices.
   2. Wait for around 10 min for all your Mobius devices to be discovered in HA.
   3. Rename your devices as required in HA Settings > Devices & services > MQTT > x devices > Edit Settings pencil icon top right > Update Name and Area.
