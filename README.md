@@ -32,13 +32,13 @@ Control Mobius Devices
   * Mobius scenes are: int 0 though 65535
   * Default scenes are: "No Scene: 0", "Feed Mode: 1", "Battery Backup: 2", "All Off: 3", "Colour Cycle: 4", "Disco :5", "Thunderstorm: 6", "Cloud Cover: 7", "All On: 8", "All 50%: 9"
 
-# PREREQUISITES:
+### PREREQUISITES:
   1. MQTT server (tested working with Mosquitto v2.0.18)
   2. Home Assistant with MQTT integration and auto discovery enabled
   3. Arduino IDE
   4. 2 x esp32 (tested working with: ...). One esp32 for GetScenes and one for SetScene.
   
-# INSTALL:
+### INSTALL:
   GetScenes:
   1. Download this archive and open MobiusMQTTGetScenes.ino in Arduino IDE.
   2. Install EspMQTTClient by Patrick Lapointe in Arduino IDE.
@@ -55,7 +55,7 @@ Control Mobius Devices
   1. Plug in a different esp32
   2. Complie and upload
      
-# USING:
+### USING:
   1. Ensure your esp32 is powered and near your Mobius devices.
   2. Wait for around 10 min for all your Mobius devices to be discovered in HA.
   3. Rename your devices as required in HA Settings > Devices & services > MQTT > x devices > Edit Settings pencil icon top right > Update Name and Area.
