@@ -18,11 +18,12 @@
  * 2. Install EspMQTTClient by Patrick Lapointe in Arduino IDE
  * 3. Install ArduinoJson by Beniot Blanchon in Arduino IDE
  * 4. Install AntiDelay by Martin Vichnal in Arduino IDE
- * 5. Open MobiusMQTTGetScenes.ino in Arduino IDE
- * 6. Edit secrets.h to insert your WiFi and MQTT values
- * 7. Ensure the board specs match the Arduino IDE settings in Tools > CPU Frequency : Flash Frequency : Upload Speed
- * 8. Compile and upload using the -> button in the Arduino IDE
- * 9. Monitor serial output in the Arduino IDE
+ * 5. Install NimBLE-Arduino by h2zero in Arduino IDE
+ * 6. Open MobiusMQTTGetScenes.ino in Arduino IDE
+ * 7. Edit secrets.h to insert your WiFi and MQTT values
+ * 8. Ensure the board specs match the Arduino IDE settings in Tools > CPU Frequency : Flash Frequency : Upload Speed
+ * 9. Compile and upload using the -> button in the Arduino IDE
+ * 10. Monitor serial output in the Arduino IDE
  * 
  * USING:
  * 1. Ensure your esp32 is powered and near your Mobius devices
