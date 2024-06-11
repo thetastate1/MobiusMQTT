@@ -47,7 +47,7 @@ Control Mobius Devices
   5. Install NimBLE-Arduino by h2zero in Arduino IDE.
   6. Edit secrets.h to insert your WiFi and MQTT values.
   7. Ensure the board specs match the Arduino IDE settings in Tools > CPU Frequency : Flash Frequency : Upload Speed.
-  8. Install esp32 by Espressif System board library version 2.0.17. Later version won't work.
+  8. Install esp32 by Espressif System board library version 2.0.17. Later versions won't work.
   9. Compile and upload using the -> button in the Arduino IDE.
   10. Monitor serial output in the Arduino IDE.
 
