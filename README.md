@@ -15,7 +15,7 @@ Tested Ecotech devices include:
 Typical use cases include:
   * Trigger feeding scenes
   * Auto water change with Versas
-  * Supplment control using Versas from manual or automated testing (e.g. Reefbot)
+  * Suppliment control using Versas from manual or automated testing (e.g. Reefbot)
   * Lighting scenes
 
 Currently requires two esp32 devices. One to discover and one to control. Intending to consolidate functionality on one esp32.
