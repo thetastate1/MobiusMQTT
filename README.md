@@ -59,6 +59,7 @@ Control Mobius Devices
   1. Ensure your esp32 is powered and near your Mobius devices.
   2. Wait for around 10 min for all your Mobius devices to be discovered in HA.
   3. Rename your devices as required in HA Settings > Devices & services > MQTT > x devices > Edit Settings pencil icon top right > Update Name and Area.
-  4. Use the Mobius app to create scenes that you want to control from HA. Note when creating scenes to select the devices that apply to the scene. You can create scenes that apply to only one device.
+  4. Use the Mobius app to create scenes that you want to control from HA. Note when creating scenes to select the devices that apply to the scene. You can create scenes that apply to only one device. As an example, you could create a scene for one Versa dosing head to deliver 5ml of Calcium over 5min.
   5. Execute the scenes from the Mobius app that you want to control from HA. The scenes will be discovered and added to the devices Current Scene sensor and Set Scene Input Select.
   6. Control Mobius devices from HA using the Set Scene Controls.
+  7. Create HA Automations to automate your aquarium.
