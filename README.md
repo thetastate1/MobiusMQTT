@@ -1,9 +1,7 @@
 # MobiusMQTT
 Control Echotech Mobius devices from Home Assistant.
 
-Based on MobiusBLE by [... <link>](https://github.com/treesta1ker/esp32-MobiusBLE)
-
-Enhanced by @thetatate1 and 
+Based on [esp32-MobiusBLE by treesta1ker <link>](https://github.com/treesta1ker/esp32-MobiusBLE)
 
 Discover and control any device available in the Mobius app from Home Assistant.
 
