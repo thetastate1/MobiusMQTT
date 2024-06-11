@@ -1,11 +1,11 @@
 # MobiusMQTT
-Control Echotech Mobius devices from Home Assistant.
+Control Ecotech Mobius devices from Home Assistant.
 
 Based on [esp32-MobiusBLE by treesta1ker <link>](https://github.com/treesta1ker/esp32-MobiusBLE)
 
 Discover and control any device available in the Mobius app from Home Assistant.
 
-Tested Echotech devices include:
+Tested Ecotech devices include:
   * Vortech
   * Versa
   * Radion
